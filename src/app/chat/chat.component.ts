@@ -27,6 +27,7 @@ export class ChatComponent implements OnInit {
   private chat(){
 
     if(this.messageContent){
+      console.log(this.messageContent);
       this.socketService.send(this.messageContent);
       this.messageContent=null;
     }
